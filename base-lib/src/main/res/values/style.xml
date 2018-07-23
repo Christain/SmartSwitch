@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BaseAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowAnimationStyle">@style/WeChatActivityAnimation</item>
+    </style>
+
+    <!-- 启动页样式-->
+    <!--<style name="StartActivityTheme" parent="BaseAppTheme">-->
+        <!--<item name="android:windowBackground">@drawable/status_404</item>-->
+    <!--</style>-->
+
+    /*QQ切换动画*/
+    <style name="QQActivityAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/qq_activity_new</item>
+        <item name="android:activityOpenExitAnimation">@anim/qq_activity_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/qq_activity_back</item>
+        <item name="android:activityCloseExitAnimation">@anim/qq_activity_finish</item>
+        <item name="android:taskOpenEnterAnimation">@anim/qq_activity_new</item>
+        <item name="android:taskOpenExitAnimation">@anim/qq_activity_out</item>
+        <item name="android:taskCloseEnterAnimation">@anim/qq_activity_back</item>
+        <item name="android:taskCloseExitAnimation">@anim/qq_activity_finish</item>
+    </style>
+
+    /*微信切换动画*/
+    <style name="WeChatActivityAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/wechat_pop_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/wechat_not_change</item>
+        <item name="android:activityCloseEnterAnimation">@anim/wechat_not_change</item>
+        <item name="android:activityCloseExitAnimation">@anim/wechat_pop_out</item>
+    </style>
+
+</resources>

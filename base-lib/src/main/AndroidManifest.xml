@@ -1,0 +1,48 @@
+<manifest package="com.chris.base"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 网络 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+
+    <!-- SD卡读写删 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+
+    <!-- 杀后台进程 -->
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+
+    <!-- 读取手机状态(运营商、IEME、手机厂商等信息) -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <application
+        android:allowBackup="false"
+        android:label="@string/app_name">
+
+        <!-- 子线程初始化服务 -->
+        <service android:name=".service.AppInitializeService">
+            <intent-filter>
+                <action android:name="com.chris.base.service.initApplication"/>
+            </intent-filter>
+        </service>
+
+        <!--<activity-->
+            <!--android:name=".ui.BaseStartActivity"-->
+            <!--android:screenOrientation="portrait"/>-->
+
+        <activity
+            android:name=".ui.BaseGuideActivity"
+            android:theme="@style/BaseAppTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".ui.BaseMainActivity"
+            android:theme="@style/BaseAppTheme"
+            android:screenOrientation="portrait"/>
+
+    </application>
+
+</manifest>
