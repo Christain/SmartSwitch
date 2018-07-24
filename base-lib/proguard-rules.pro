@@ -71,6 +71,12 @@
     public <init>(**, android.view.View);
 }
 
+#=================ARouter=====================#
+-keep public class com.alibaba.android.arouter.routes.**{*;}
+-keep class * implements com.alibaba.android.arouter.facade.template.ISyringe{*;}
+-keep interface * implements com.alibaba.android.arouter.facade.template.IProvider
+-keep class * implements com.alibaba.android.arouter.facade.template.IProvider
+
 #=================leakcanary==================#
 -dontwarn com.squareup.haha.guava.**
 -dontwarn com.squareup.haha.perflib.**

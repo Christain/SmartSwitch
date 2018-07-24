@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.alibaba.android.arouter.facade.annotation.Route;
 import com.chris.base.R;
 import com.chris.base.superclass.SuperActivity;
 import com.chris.base.util.DoubleClickExitUtil;
@@ -26,6 +27,7 @@ import com.chris.base.widget.viewpagerindicator.viewpager.ScrollViewPager;
  * 创建日期：2018/7/19 下午8:40
  * ===============================
  */
+@Route(path = "/home/main", extras = 1)
 public class BaseMainActivity extends SuperActivity {
 
     private DoubleClickExitUtil doubleClickExitHelper;

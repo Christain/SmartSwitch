@@ -7,6 +7,7 @@ import android.support.v4.view.ViewPager;
 import android.view.Gravity;
 import android.view.View;
 
+import com.alibaba.android.arouter.launcher.ARouter;
 import com.chris.base.R;
 import com.chris.base.superclass.SuperActivity;
 import com.chris.base.util.BtnClickUtil;
@@ -107,8 +108,7 @@ public class BaseGuideActivity extends SuperActivity implements View.OnClickList
            return;
         }
         //TODO 首页
-        startActivity(BaseMainActivity.class);
-        finish();
+        ARouter.getInstance().build("/home/main").navigation();
     }
 
     /**

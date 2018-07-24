@@ -7,18 +7,20 @@ ext {
             targetSdkVersion : 27]
 
     def dependVersion = [
-            support     : "27.1.1",
-            okhttp      : "3.11.0",
-            okgo        : "3.0.4",
-            gson        : "2.8.5",
-            glide       : "4.7.1",
-            butterknife : "8.8.1",
-            eventbus    : "3.1.1",
-            permission  : "1.2.0",
-            logger      : "2.2.0",
-            multidex    : "1.0.1",
-            bugly       : "2.6.6",
-            leakcanary  : "1.5.4"
+            support             : "27.1.1",
+            okhttp              : "3.11.0",
+            okgo                : "3.0.4",
+            gson                : "2.8.5",
+            glide               : "4.7.1",
+            butterknife         : "8.8.1",
+            eventbus            : "3.1.1",
+            arouter             : "1.3.1",
+            arouter_compiler    : "1.1.4",
+            permission          : "1.2.0",
+            logger              : "2.2.0",
+            multidex            : "1.0.1",
+            bugly               : "2.6.6",
+            leakcanary          : "1.5.4"
     ]
 
     dependencies = [
@@ -46,6 +48,10 @@ ext {
             "butterknife-compiler"      : "com.jakewharton:butterknife-compiler:${dependVersion.butterknife}",
             "butterknife-lib"           : "com.jakewharton:butterknife-gradle-plugin:${dependVersion.butterknife}",
             "eventbus"                  : "org.greenrobot:eventbus:${dependVersion.eventbus}",
+
+            //arouter
+            "arouter"                   : "com.alibaba:arouter-api:${dependVersion.arouter}",
+            "arouter-compiler"          : "com.alibaba:arouter-compiler:${dependVersion.arouter_compiler}",
 
             //permission
             "permission"                : "pub.devrel:easypermissions:${dependVersion.permission}",

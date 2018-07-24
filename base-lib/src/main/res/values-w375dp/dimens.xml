@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<dimen name="dp_1">1.04dp</dimen>
+	<dimen name="dp_2">2.08dp</dimen>
+	<dimen name="dp_10">10.42dp</dimen>
+	<dimen name="dp_12">12.50dp</dimen>
+	<dimen name="dp_28">29.17dp</dimen>
+	<dimen name="dp_45">46.87dp</dimen>
+	<dimen name="dp_46">47.92dp</dimen>
+	<dimen name="dp_47">48.96dp</dimen>
+	<dimen name="dp_48">50.00dp</dimen>
+	<dimen name="dp_50">52.08dp</dimen>
+	<dimen name="dp_60">62.50dp</dimen>
+	<dimen name="dp_150">156.25dp</dimen>
+	<dimen name="sp_10">10.42sp</dimen>
+	<dimen name="sp_11">11.46sp</dimen>
+	<dimen name="sp_11.5">11.98sp</dimen>
+	<dimen name="sp_12">12.50sp</dimen>
+	<dimen name="sp_12.5">13.02sp</dimen>
+	<dimen name="sp_13">13.54sp</dimen>
+	<dimen name="sp_13.5">14.06sp</dimen>
+	<dimen name="sp_14">14.58sp</dimen>
+	<dimen name="sp_14.5">15.10sp</dimen>
+	<dimen name="sp_15">15.62sp</dimen>
+	<dimen name="sp_15.5">16.15sp</dimen>
+	<dimen name="sp_16">16.67sp</dimen>
+	<dimen name="sp_16.5">17.19sp</dimen>
+	<dimen name="sp_17">17.71sp</dimen>
+	<dimen name="sp_17.5">18.23sp</dimen>
+	<dimen name="sp_18">18.75sp</dimen>
+	<dimen name="sp_18.5">19.27sp</dimen>
+	<dimen name="sp_19">19.79sp</dimen>
+	<dimen name="sp_19.5">20.31sp</dimen>
+	<dimen name="sp_20">20.83sp</dimen>
+</resources>

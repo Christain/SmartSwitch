@@ -3,6 +3,7 @@ package com.chris.base;
 import android.app.Application;
 import android.content.Context;
 
+import com.alibaba.android.arouter.launcher.ARouter;
 import com.chris.base.service.AppInitializeService;
 import com.chris.base.util.PhoneUtil;
 import com.lzy.okgo.OkGo;
@@ -48,6 +49,8 @@ public class SuperApp extends Application {
         AppInitializeService.start(this);
         //网络初始化
         initOkhttp();
+        //ARouter初始化
+        initARouter();
     }
 
     private void initOkhttp() {
@@ -97,6 +100,17 @@ public class SuperApp extends Application {
                 .setRetryCount(1);                              //全局统一超时重连次数，默认为三次，那么最差的情况会请求4次(一次原始请求，三次重连请求)，不需要可以设置为0
                 //.addCommonHeaders(headers)                    //全局公共头
                 //.addCommonParams(params);                     //全局公共参数
+    }
+
+    /**
+     * 初始化ARouter
+     */
+    private void initARouter() {
+        if (BuildConfig.DEBUG) {
+            ARouter.openLog();
+            ARouter.openDebug();
+        }
+        ARouter.init(this);
     }
 
     public static synchronized SuperApp getInstance() {

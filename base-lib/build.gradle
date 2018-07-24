@@ -9,6 +9,12 @@ android {
         targetSdkVersion rootProject.ext.android.targetSdkVersion
         versionCode 1
         versionName "1.0"
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [ moduleName : project.getName() ]
+            }
+        }
     }
 
     buildTypes {
@@ -41,6 +47,7 @@ dependencies {
     api rootProject.ext.dependencies["logger"]
     api rootProject.ext.dependencies["glide"]
     api rootProject.ext.dependencies["eventbus"]
+    api rootProject.ext.dependencies["arouter"]
     api rootProject.ext.dependencies["glide-okhttp3-integration"]
     api rootProject.ext.dependencies["permission"]
     api rootProject.ext.dependencies["okhttp"]
@@ -48,6 +55,7 @@ dependencies {
         exclude module: 'okhttp'
     }
 
+    annotationProcessor rootProject.ext.dependencies["arouter-compiler"]
     annotationProcessor rootProject.ext.dependencies["glide-compiler"]
 
     debugApi rootProject.ext.dependencies["leakcanary-android"]

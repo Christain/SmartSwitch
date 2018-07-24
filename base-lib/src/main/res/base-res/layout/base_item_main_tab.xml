@@ -9,8 +9,8 @@
 
     <ImageView
         android:id="@+id/iv_tab"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/dp_28"
+        android:layout_height="@dimen/dp_28"
         android:scaleType="fitXY"
         android:src="@drawable/leak_canary_icon"/>
 
@@ -21,6 +21,6 @@
         android:layout_marginTop="@dimen/dp_2"
         android:text="首页"
         android:textColor="@drawable/base_main_tab_text_color"
-        android:textSize="11sp"/>
+        android:textSize="@dimen/sp_11"/>
 
 </LinearLayout>
